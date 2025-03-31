@@ -30,7 +30,9 @@ console.log(mutableCharArr);
 // reverseArray
 console.log(reverseArray([1,2,3]));
 console.log(reverseArray(["a", "b", "c"]));
+
 console.log('-------------------');
+// PARTIALLY IMPLEMENTED
 
 function reverseArrayInPlace(array) {
     for (let i = 0; i < Math.floor(array.length / 2); i++) {
