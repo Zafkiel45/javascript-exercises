@@ -24,3 +24,5 @@ MANGA.show('Manga');
 GAMES.show('Games');
 PROGRAMMER.show('Programmer');
 
+// there is not default methods or properties. 
+const OBJECT_WITHOUT_PROTOTYPE = Object.create(null)

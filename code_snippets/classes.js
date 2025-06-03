@@ -59,5 +59,23 @@ class Manga {
 const DEATH_NOTE = new Manga('Death Note');
 const VAGABOND = new Manga('Vagabond');
 
-DEATH_NOTE.showTitle()
-VAGABOND.showTitle()
+DEATH_NOTE.showTitle();
+VAGABOND.showTitle();
+
+class SuperSecretData {
+  #myFavoriteAnime;
+  #myFavoriteManga;
+
+  constructor(anime, manga) {
+    this.#myFavoriteAnime = anime;
+    this.#myFavoriteManga = manga;
+  };
+
+  showSecreteData() {
+    console.log(`${String(this.#myFavoriteAnime).toUpperCase()} & ${String(this.#myFavoriteManga).toUpperCase()}`);
+  };
+};
+
+new SuperSecretData("Sousou no Frieren", "Vagabond").showSecreteData();
+new SuperSecretData("Hajime no Ippon", "Berserk").showSecreteData();
+
